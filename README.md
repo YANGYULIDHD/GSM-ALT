@@ -1,10 +1,12 @@
 # GSM-ALT
-This is the repository for our dataset GSM-ALT, which was used to evaluate LLMs' robustness to numerical variations in mathematical reasoning tasks.
+This is the repository for our dataset **GSM-ALT**, which was used to evaluate LLMs' robustness to numerical variations in mathematical reasoning tasks.
 
 ## Dataset Summary
-GSM-ALT is a dataset of 250 abstracted templates created from the questions randomly sampled from GSM8K (Grade School Math 8K) dataset \[Cobbe et al., 2021\]. 
+GSM-ALT is a dataset of 250 abstracted templates created from the questions randomly sampled from `GSM8K` (Grade School Math 8K) dataset \[Cobbe et al., 2021\]. 
+
 For a question in GSM8K, we manually check it and rewrite some of the numerical values in the question text, process and final answer into variables like x, y, z, ..., to create their abstracted forms (which construct the template).
 With the template, you can automatically generate multiple variants of the original questions by replacing the variables with random values, which can be used to evaluate LLMs' robustness to numerical variations in mathematical reasoning tasks.
+
 However, to ensure the validity of the generated variants, replaced values in the template should meet certain constraints (e.g., x/2 should be a whole number if it represents the number of something). 
 We manually annotate the constraints for each template.
 When generating variants, you can accept only those that meet the constrains to ensure their qualities.
