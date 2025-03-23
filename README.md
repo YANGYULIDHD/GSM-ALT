@@ -12,13 +12,13 @@ When generating variants, you can accept only those that meet the constrains to 
 ## Data Structure
 
 ### Data Fields
--question: the original question string in "GSM8K".
--process: the original process string to the "question" in "GSM8K". It contains multiple steps of reasoning and the final numerical answer.
--final_answer: the final answer extracted from the "process".
--abstracted_question: the abstracted question string corresponding to the 'question'.
--abstracted_process: the abstracted process string corresponding to the 'process'.
--abstracted_final_answer: the abstracted final answer corresponding to the 'final_answer'.
--constraints: the constraints string. Multiple constraints are seperated by '###'.
+- question: the original question string in "GSM8K".
+- process: the original process string to the "question" in "GSM8K". It contains multiple steps of reasoning and the final numerical answer.
+- final_answer: the final answer extracted from the "process".
+- abstracted_question: the abstracted question string corresponding to the 'question'.
+- abstracted_process: the abstracted process string corresponding to the 'process'.
+- abstracted_final_answer: the abstracted final answer corresponding to the 'final_answer'.
+- constraints: the constraints string. Multiple constraints are seperated by '###'.
 
 ### Data Instance
 ```
