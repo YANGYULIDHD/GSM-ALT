@@ -1,5 +1,5 @@
 # GSM-ALT
-This is the repository for our dataset **GSM-ALT**, which was used to evaluate LLMs' robustness to numerical variations in mathematical reasoning tasks.
+This is the repository for our dataset **GSM-ALT**, which is used to evaluate LLMs' robustness to numerical variations in mathematical reasoning tasks.
 
 ## Dataset Summary
 **GSM-ALT** is a dataset of 250 abstracted templates created from the questions randomly sampled from **GSM8K** (Grade School Math 8K) dataset \[Cobbe et al., 2021\]. 
