@@ -1,15 +1,17 @@
 # GSM-ALT
-This is the repository for our dataset **GSM-ALT**, which is used to evaluate LLMs' robustness to numerical variations in mathematical reasoning tasks.
+This repository contains the dataset **GSM-ALT**, which was developed to evaluate the robustness of large language models (LLMs) to numerical variations in mathematical reasoning tasks.
 
 ## Dataset Summary
-**GSM-ALT** is a dataset of 250 abstracted templates created from the questions randomly sampled from **GSM8K** (Grade School Math 8K) dataset \[Cobbe et al., 2021\]. 
+**GSM-ALT** is a dataset of 250 abstracted templates derived from questions randomly sampled from the **GSM8K** (Grade School Math 8K) dataset \[Cobbe et al., 2021\]. 
 
-For a question in GSM8K, we manually check it and rewrite some of the numerical values in the question text, process and final answer into variables like x, y, z, ..., to create their **abstracted forms** (which construct the template).
-With the template, you can automatically generate multiple variants of the original questions by replacing the variables with random values, which can be used to evaluate LLMs' robustness to numerical variations in mathematical reasoning tasks.
+For each question instance in GSM8K, we manually review and rewrite certain numerical values in the "question," "process," and "final answer" into variables such as x, y, and z.
+This process creates **abstracted forms**, which serve as **templates**.
+With these template, users can automatically generate multiple variants of the original questions by substituting the variables with random values. 
+This allows for the comprehensive evaluation of LLMs' robustness to numerical variations in mathematical reasoning tasks.
 
-However, to ensure the validity of the generated variants, replaced values in the template should meet certain **constraints** (e.g., x/2 should be a whole number if it represents the number of certain objects). 
-We manually annotate the constraints for each template.
-When generating variants, you can accept only those that meet the constrains to ensure their qualities.
+To ensure the validity of the generated variants, the replaced values in the templates must adhere to specific **constraints** (e.g., x/2 should result in a whole number if it represents the count of particular objects). 
+We manually annotate these constraints for each template.
+Users can only accept those that meet the constraints when generating variants to ensure their qualities.
 
 ## Data Structure
 
@@ -20,7 +22,7 @@ When generating variants, you can accept only those that meet the constrains to 
 - `abstracted_question`: the abstracted question string corresponding to the `question`.
 - `abstracted_process`: the abstracted process string corresponding to the `process`.
 - `abstracted_final_answer`: the abstracted final answer corresponding to the `final_answer`.
-- `constraints`: the constraints string. Multiple constraints are seperated by '###'.
+- `constraints`: the constraints string. Multiple constraints are separated by '###'.
 
 ### Data Instance
 ```
@@ -34,7 +36,7 @@ When generating variants, you can accept only those that meet the constrains to 
     'constraints':'y<z ### p<q ### i<100'
 }
 ```
-**Note: In addition to the constraints annotated in our dataset, there is a common constraint for all templates. That is the "final_answer" should be a postive, whole number.**
+**Note: In addition to the constraints annotated in our dataset, there is a common constraint for all templates. That is, the "final_answer" should be a postive, whole number.**
 
 ## License
-The original GSM8K was distributed under the MIT License so the GSM-ALT is also licensed under the MIT License.
+The original GSM8K was distributed under the MIT License, so the GSM-ALT is also licensed under the MIT License.
