@@ -1,5 +1,5 @@
 # GSM-ALT
-This repository contains the dataset **GSM-ALT**, which was developed to evaluate the robustness of large language models (LLMs) to numerical variations in mathematical reasoning tasks.
+This repository contains the dataset **GSM-ALT** (`template.jsonl`), which was developed to evaluate the robustness of large language models (LLMs) to numerical variations in mathematical reasoning tasks.
 
 ## Dataset Summary
 **GSM-ALT** is a dataset of 250 abstracted templates derived from questions randomly sampled from the **GSM8K** (Grade School Math 8K) dataset \[Cobbe et al., 2021\]. 
