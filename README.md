@@ -39,4 +39,4 @@ Users can only accept those that meet the constraints when generating variants t
 **Note: In addition to the constraints annotated in our dataset, there is a common constraint for all templates. That is, the "final_answer" should be a whole number.**
 
 ## License
-The original GSM8K was distributed under the MIT License, so the GSM-ALT is also licensed under the MIT License.
+The original **GSM8K** was distributed under the MIT License, so the **GSM-ALT_template** is also licensed under the MIT License.
